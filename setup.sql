@@ -1,34 +1,32 @@
 -- ============================================
 -- PHP & MySQL Learning Lab — Database Setup
 -- ============================================
--- Run this script in phpMyAdmin's SQL tab
--- or import it via phpMyAdmin's Import feature
--- ============================================
-
--- Explanation notes:
--- - CREATE DATABASE IF NOT EXISTS creates the database only if it doesn't exist yet
--- - Column types define what kind of data is stored in each field
--- - AUTO_INCREMENT automatically fills successive values for a primary key
--- - FOREIGN KEY enforces referential integrity between tables
--- - ENGINE=InnoDB and CHARSET=utf8mb4 specify storage engine and character set
--- - DEFAULT CURRENT_TIMESTAMP auto-fills timestamp fields on insert
 --
--- Run this script to set up the lab database with sample data
+-- STEP 1: Create the database
+--   Go to phpMyAdmin home → click "SQL" tab at top → paste ONLY the line below → click Go
+--
+--   CREATE DATABASE php_mysql_lab;
+--
+-- STEP 2: Select the database
+--   Click "php_mysql_lab" in the left sidebar to select it
+--
+-- STEP 3: Run the rest of this file
+--   Click the "SQL" tab → paste everything below this comment block → click Go
 -- ============================================
 
--- Create the database
-CREATE DATABASE IF NOT EXISTS php_mysql_lab;
-USE php_mysql_lab;
+-- Drop tables if they already exist (run multiple times safely)
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS categories;
 
 -- Create categories table
-CREATE TABLE IF NOT EXISTS categories (
+CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     description TEXT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Create products table
-CREATE TABLE IF NOT EXISTS products (
+CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     description TEXT,
@@ -36,8 +34,7 @@ CREATE TABLE IF NOT EXISTS products (
     stock INT NOT NULL DEFAULT 0,
     category_id INT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Insert sample categories
@@ -62,12 +59,3 @@ INSERT INTO products (name, description, price, stock, category_id) VALUES
 ('Premium Coffee Beans 1kg', 'Arabica single origin, medium roast', 185000, 45, 3),
 ('Introduction to PHP', 'Comprehensive guide for beginners, 2024 edition', 320000, 35, 4),
 ('MySQL Crash Course', 'Learn MySQL in 30 days, practical examples', 275000, 28, 4);
-
--- Educational SQL comments:
--- - CREATE DATABASE IF NOT EXISTS ensures the database is created only if it does not already exist.
--- - Each column type (INT, VARCHAR, TEXT, DECIMAL, TIMESTAMP) defines the kind of data stored.
--- - AUTO_INCREMENT automatically assigns a unique value to new rows.
--- - FOREIGN KEY enforces referential integrity between tables.
--- - ENGINE=InnoDB is a transactional storage engine supporting foreign keys.
--- - CHARSET=utf8mb4 supports full Unicode characters.
--- - DEFAULT CURRENT_TIMESTAMP fills the timestamp columns with the current time on insert.
