@@ -1,3 +1,19 @@
+-- ============================================
+-- PHP & MySQL Learning Lab - Database Setup
+-- ============================================
+--
+-- STEP 1: Create the database
+--   Go to your SQL client and run:
+--
+--   CREATE DATABASE php_mysql_lab;
+--
+-- STEP 2: Select the database
+--   Click "php_mysql_lab" in the sidebar to select it
+--
+-- STEP 3: Run the rest of this file
+--   Run each statement below one by one
+-- ============================================
+
 DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS categories;
 
