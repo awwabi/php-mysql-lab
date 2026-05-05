@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 25: CRUD Update & Delete — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '25';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -64,4 +64,4 @@ if (isset($_GET["delete_id"]) &amp;&amp; isset($_GET["confirm"])) {
     <strong>Mistake 3:</strong> Using UPDATE without WHERE — updates all rows in the table!
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

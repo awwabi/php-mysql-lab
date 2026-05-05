@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 06: Looping';
 $baseUrl = '../../style.css';
 $currentLab = '06';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -57,4 +57,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

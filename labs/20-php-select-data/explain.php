@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 20: PHP Select Data — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '20';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -91,4 +91,4 @@ echo date("d M Y", strtotime($row["created_at"]));
     <strong>Mistake 3:</strong> Calling <code>mysqli_fetch_assoc()</code> after the loop — the result pointer is already at the end.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

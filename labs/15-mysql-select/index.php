@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 15: MySQL Select';
 $baseUrl = '../../style.css';
 $currentLab = '15';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -68,4 +68,4 @@ WHERE price > 500000 AND stock > 20;</code></pre>
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

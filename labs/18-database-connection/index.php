@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 18: Database Connection';
 $baseUrl = '../../style.css';
 $currentLab = '18';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -27,7 +27,7 @@ include '../includes/header.php';
 -->
 
 <!-- TODO 1: Include the database config file -->
-<!-- HINT: include '../../config.php'; -->
+<!-- HINT: include __DIR__ . '/../../config.php'; -->
 
 <!-- TODO 2: Create a connection using mysqli_connect() -->
 <!-- HINT: $conn = mysqli_connect($host, $user, $pass, $dbname); -->
@@ -59,4 +59,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

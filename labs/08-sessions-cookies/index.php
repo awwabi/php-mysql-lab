@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 08: Sessions & Cookies';
 $baseUrl = '../../style.css';
 $currentLab = '08';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -59,4 +59,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

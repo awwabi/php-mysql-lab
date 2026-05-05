@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 18: Database Connection — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '18';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -87,4 +87,4 @@ mysqli_close($conn); // Explicitly close (optional — PHP closes it at script e
     <strong>Mistake 3:</strong> Not checking connection before running queries — causes cryptic errors later.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

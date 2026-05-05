@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 20: PHP Select Data';
 $baseUrl = '../../style.css';
 $currentLab = '20';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -23,7 +23,7 @@ include '../includes/header.php';
 -->
 
 <!-- TODO 1: Include the database config file -->
-<!-- HINT: include '../../config.php'; -->
+<!-- HINT: include __DIR__ . '/../../config.php'; -->
 
 <!-- TODO 2: Run a SELECT query to get all products -->
 <!-- HINT: $result = mysqli_query($conn, "SELECT * FROM products ORDER BY id"); -->
@@ -57,4 +57,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 04: Operators — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '04';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -197,4 +197,4 @@ echo true &amp;&amp; false || true; // true (&& before ||)
     but <code>$result = false or true</code> gives <code>$result = false</code> (because <code>=</code> has higher precedence than <code>or</code>).
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

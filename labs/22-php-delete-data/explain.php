@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 22: PHP Delete Data — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '22';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -80,4 +80,4 @@ exit; // Always call exit after header redirect
     <strong>Mistake 3:</strong> Not checking if the record exists — could show a confusing error.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

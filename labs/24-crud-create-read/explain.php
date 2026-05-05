@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 24: CRUD Create & Read — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '24';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -66,4 +66,4 @@ mysqli_free_result($result);
     <li>Show clear success/error messages</li>
 </ul>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

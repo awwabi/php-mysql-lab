@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 07: Arrays — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '07';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -112,4 +112,4 @@ foreach ($person as $key =&gt; $value) {
     <strong>Mistake 3:</strong> Forgetting that <code>array_pop()</code> and <code>array_shift()</code> modify the original array (not just return a value).
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

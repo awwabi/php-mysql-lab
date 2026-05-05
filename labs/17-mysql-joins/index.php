@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 17: MySQL Joins';
 $baseUrl = '../../style.css';
 $currentLab = '17';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -76,4 +76,4 @@ LIMIT 5;</code></pre>
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

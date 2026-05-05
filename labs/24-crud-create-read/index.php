@@ -2,8 +2,8 @@
 $pageTitle = 'Lab 24: CRUD Create & Read';
 $baseUrl = '../../style.css';
 $currentLab = '24';
-include '../includes/header.php';
-include '../../config.php';
+include __DIR__ . '/../includes/header.php';
+include __DIR__ . '/../../config.php';
 
 $message = '';
 $messageType = '';
@@ -117,5 +117,5 @@ if ($catResult) {
 
 <?php
 mysqli_close($conn);
-include '../includes/footer.php';
+include __DIR__ . '/../includes/footer.php';
 ?>

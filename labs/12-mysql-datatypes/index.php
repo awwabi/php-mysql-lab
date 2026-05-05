@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 12: MySQL Data Types';
 $baseUrl = '../../style.css';
 $currentLab = '12';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -91,4 +91,4 @@ INSERT INTO users (username, role, permissions) VALUES
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

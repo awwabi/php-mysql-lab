@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 21: PHP Update Data — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '21';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -79,4 +79,4 @@ if (isset($_GET["success"])) {
     <strong>Mistake 3:</strong> Not checking if the record exists before showing the form.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

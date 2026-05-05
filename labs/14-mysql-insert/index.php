@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 14: MySQL Insert';
 $baseUrl = '../../style.css';
 $currentLab = '14';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -67,4 +67,4 @@ VALUES (100, 'Special Item', 999999, 1, 3);</code></pre>
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

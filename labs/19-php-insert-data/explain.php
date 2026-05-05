@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 19: PHP Insert Data — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '19';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -78,4 +78,4 @@ echo "Rows inserted: " . mysqli_affected_rows($conn);
     <strong>Mistake 3:</strong> Not checking for errors — <code>mysqli_error($conn)</code> helps debug issues.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

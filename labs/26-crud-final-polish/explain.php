@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 26: CRUD Final Polish — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '26';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -94,4 +94,4 @@ if (isset($_GET["edit_id"])) {
     <li><strong>File Uploads</strong> — Handling image uploads for products</li>
 </ul>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

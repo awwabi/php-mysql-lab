@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 08: Sessions & Cookies — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '08';
-include '../includes/header.php';
+include __DIR__ . '/../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -100,4 +100,4 @@ setcookie("theme", "", time() - 3600, "/");
     <strong>Mistake 3:</strong> Forgetting <code>session_start()</code> and then trying to use <code>$_SESSION</code>.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
