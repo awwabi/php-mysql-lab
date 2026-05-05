@@ -1,13 +1,16 @@
 <?php
-// Expect $pageTitle to be set before including this file
 if (!isset($pageTitle)) $pageTitle = 'PHP & MySQL Learning Lab';
 if (!isset($currentLab)) $currentLab = '';
-// Determine active lab from URL if not provided
 $activeLab = $currentLab;
 if (empty($activeLab) && isset($_SERVER['PHP_SELF'])) {
     if (preg_match('#/labs/([0-9]{2})-#', $_SERVER['PHP_SELF'], $m)) {
         $activeLab = $m[1];
     }
+}
+$isExplain = isset($_SERVER['PHP_SELF']) && str_contains($_SERVER['PHP_SELF'], 'explain.php');
+$labDir = '';
+if (isset($_SERVER['PHP_SELF']) && preg_match('#(/labs/[0-9]{2}-[^/]+)/#', $_SERVER['PHP_SELF'], $m)) {
+    $labDir = $m[1];
 }
 ?>
 <!DOCTYPE html>
@@ -69,6 +72,12 @@ if (empty($activeLab) && isset($_SERVER['PHP_SELF'])) {
         </div>
     </nav>
     <div class="content">
+        <?php if ($labDir): ?>
+        <div class="lab-tabs">
+            <a href="<?= $labDir ?>/index.php" class="lab-tab <?= !$isExplain ? 'active' : '' ?>">Exercise</a>
+            <a href="<?= $labDir ?>/explain.php" class="lab-tab <?= $isExplain ? 'active' : '' ?>">Learn</a>
+        </div>
+        <?php endif; ?>
         <script>
         (function(){
             var btn = document.getElementById('nav-toggle');
