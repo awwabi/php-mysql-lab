@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 23: CRUD Setup — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '23';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -86,4 +86,4 @@ User clicks delete
     <li>✅ Lab 18 (Database Connection) completed successfully</li>
 </ul>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

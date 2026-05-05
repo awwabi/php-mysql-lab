@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 01: PHP Introduction — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '01';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -63,4 +63,4 @@ troubleshooting in a development environment. It should not be exposed in produc
   <li>Mixing HTML and PHP without proper escaping can break markup.</li>
 </ul>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

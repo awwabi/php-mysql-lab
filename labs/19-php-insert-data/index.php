@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 19: PHP Insert Data';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '19';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -23,7 +23,7 @@ include '../includes/header.php';
 -->
 
 <!-- TODO 1: Include the database config and start processing if form was submitted -->
-<!-- HINT: include '../config.php'; if ($_SERVER["REQUEST_METHOD"] === "POST") { ... } -->
+<!-- HINT: include '../../config.php'; if ($_SERVER["REQUEST_METHOD"] === "POST") { ... } -->
 
 <!-- TODO 2: Sanitize the form inputs -->
 <!-- HINT: $name = mysqli_real_escape_string($conn, trim($_POST["name"])); $price = mysqli_real_escape_string($conn, $_POST["price"]); -->
@@ -51,4 +51,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

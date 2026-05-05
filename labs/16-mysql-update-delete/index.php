@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 16: MySQL Update & Delete';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '16';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -76,4 +76,4 @@ TRUNCATE TABLE products;</code></pre>
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

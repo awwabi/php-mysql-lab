@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 03: Data Types — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '03';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -185,4 +185,4 @@ echo gettype($x);  // integer
     <code>"10 apples" + 5</code> gives <code>15</code> (PHP extracts the leading number).
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

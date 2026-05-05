@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 05: Selection – Explain';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '05';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 
 <pre class="box-header" aria-label="Lab Explain Header">

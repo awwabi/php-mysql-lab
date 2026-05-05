@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 07: Arrays';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '07';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -58,4 +58,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 11: MySQL Introduction — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '11';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -71,4 +71,4 @@ Database: php_mysql_lab
     <strong>Mistake 3:</strong> Running DROP DATABASE on the wrong database — always double-check!
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 10: Form Validation — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '10';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -126,4 +126,4 @@ foreach ($errors as $error) {
     <strong>Mistake 3:</strong> Showing detailed error messages to users that reveal system information. Keep error messages user-friendly and vague about internals.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

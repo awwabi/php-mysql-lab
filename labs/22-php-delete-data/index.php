@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 22: PHP Delete Data';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '22';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -29,7 +29,7 @@ include '../includes/header.php';
 </div>
 
 <!-- TODO 1: Include the database config file -->
-<!-- HINT: include '../config.php'; -->
+<!-- HINT: include '../../config.php'; -->
 
 <!-- TODO 2: If an ID is provided in the URL, first fetch the product to show its name -->
 <!-- HINT: $id = (int) $_GET["id"]; $result = mysqli_query($conn, "SELECT name FROM products WHERE id = $id"); $product = mysqli_fetch_assoc($result); -->
@@ -61,4 +61,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

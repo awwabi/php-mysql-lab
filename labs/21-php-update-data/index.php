@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 21: PHP Update Data';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '21';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -23,7 +23,7 @@ include '../includes/header.php';
 -->
 
 <!-- TODO 1: Include the database config file -->
-<!-- HINT: include '../config.php'; -->
+<!-- HINT: include '../../config.php'; -->
 
 <!-- TODO 2: If an ID is provided in the URL ($_GET["id"]), fetch the product to edit -->
 <!-- HINT: $id = (int) $_GET["id"]; $result = mysqli_query($conn, "SELECT * FROM products WHERE id = $id"); $product = mysqli_fetch_assoc($result); -->
@@ -52,4 +52,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

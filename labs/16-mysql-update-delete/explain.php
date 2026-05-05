@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 16: MySQL Update & Delete — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '16';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -82,4 +82,4 @@ UPDATE products SET price = price * 0.9 WHERE category_id = 2;</code></pre>
     <strong>Mistake 3:</strong> Using TRUNCATE on production tables — it's irreversible and resets AUTO_INCREMENT.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

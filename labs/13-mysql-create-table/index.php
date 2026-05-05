@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 13: MySQL Create Table';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '13';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -84,4 +84,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

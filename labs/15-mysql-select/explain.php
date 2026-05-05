@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 15: MySQL Select — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '15';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -90,4 +90,4 @@ SELECT MIN(price), MAX(price) FROM products; -- Price range</code></pre>
     <strong>Mistake 3:</strong> Confusing <code>= NULL</code> with <code>IS NULL</code> — NULL is never equal to anything, not even itself.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

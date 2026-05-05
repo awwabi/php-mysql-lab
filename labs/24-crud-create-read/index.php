@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 24: CRUD Create & Read';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '24';
-include '../includes/header.php';
+include '../../includes/header.php';
 include '../../config.php';
 
 $message = '';
@@ -117,5 +117,5 @@ if ($catResult) {
 
 <?php
 mysqli_close($conn);
-include '../includes/footer.php';
+include '../../includes/footer.php';
 ?>

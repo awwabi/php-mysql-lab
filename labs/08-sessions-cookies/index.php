@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 08: Sessions & Cookies';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '08';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -59,4 +59,4 @@ include '../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

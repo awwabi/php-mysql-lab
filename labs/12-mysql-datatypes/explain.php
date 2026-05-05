@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 12: MySQL Data Types — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '12';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -85,4 +85,4 @@ include '../includes/header.php';
     <strong>Mistake 3:</strong> Using TEXT for short strings — VARCHAR is more efficient for strings under 255 chars.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

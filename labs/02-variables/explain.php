@@ -1,8 +1,8 @@
 <?php
 $pageTitle = 'Lab 02: Variables — Concept Guide';
-$baseUrl = '../style.css';
+$baseUrl = '../../style.css';
 $currentLab = '02';
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -176,4 +176,4 @@ echo $greeting; // Output: Hello (global variable unchanged)
     <strong>Right:</strong> Be consistent with your naming convention.
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>
