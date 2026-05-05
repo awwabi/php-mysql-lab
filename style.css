@@ -1,0 +1,169 @@
+/* uts-prep-inspired shared CSS design system for PHP & MySQL lab
+   - Color palette strictly defined (no CSS vars)
+   - No external frameworks or JS
+   - Simple, readable rules for beginner labs
+*/
+
+/* Generic reset to keep layout predictable for learning pages */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1e293b; /* dark slate text */
+  background: #f8fafc; /* lighter background */
+  line-height: 1.5;
+}
+
+/* Accessible links look consistent */
+a { color: inherit; text-decoration: none; }
+
+/* Color palette (no CSS vars) */
+.primary { color: #6366f1; }
+.bg-primary { background-color: #6366f1; color: #fff; }
+.bg-secondary { background-color: #8b5cf6; color: #fff; }
+.bg-page { background-color: #f8fafc; }
+.text-muted { color: #64748b; }
+.text-soft { color: #94a3b8; }
+.border { border: 1px solid #e2e8f0; }
+.border-soft { border-color: #e2e8f0; }
+.bg-light { background-color: #f1f5f9; }
+
+/* Sections: utility layout blocks */
+.back-link {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #6366f1; /* indigo */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.back-link:hover { background-color: #4f46e5; }
+
+.subtitle { color: #64748b; font-size: 0.95em; margin-top: 4px; }
+
+.diagram {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #ffffff;
+  font-family: ui-monospace,SFMono-Regular,Monaco,Consolas,'Liberation Mono','Courier New',monospace;
+  white-space: pre;
+}
+
+.tip-box {
+  border-left: 4px solid #22c55e; /* success */
+  background: #f0fff4;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+.warning-box {
+  border-left: 4px solid #f59e0b; /* warning */
+  background: #fffaf0;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+.danger-box {
+  border-left: 4px solid #ef4444; /* danger */
+  background: #fff0f0;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+
+.try-it {
+  border: 2px dashed #6366f1; /* indigo */
+  padding: 14px;
+  border-radius: 6px;
+  background: #f7f6ff;
+}
+
+table.compare {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+.compare th, .compare td {
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  text-align: left;
+}
+.compare th { background: #f8fafc; font-weight: 600; }
+
+/* New PHP-lab specific layout blocks */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background: #111827; /* dark slate */
+  color: #e5e7eb;
+  overflow-y: auto;
+  padding: 12px 0;
+}
+.sidebar-link {
+  display: block;
+  padding: 10px 14px;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.sidebar-link.active { background: #1f2937; color: #fff; }
+.content {
+  margin-left: 240px; /* offset for fixed sidebar */
+  padding: 20px;
+}
+.header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: linear-gradient(135deg, #1f2937 0%, #0b1020 100%);
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+.group { margin: 24px 0; padding: 6px 0; }
+.group-title { font-size: 1.2em; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
+.lab-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px;
+  background: #fff;
+  width: 100%;
+  display: block;
+}
+.lab-card a { color: #1e3a8a; font-weight: 600; text-decoration: none; }
+.form-group { margin: 12px 0; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 6px; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 8px; border: 1px solid #e2e8f0; border-radius: 4px; font-family: inherit;
+}
+.btn { display: inline-block; padding: 10px 14px; border-radius: 6px; border: none; cursor: pointer; color: #fff; background: #6366f1; font-weight: 600; }
+.btn-primary { background: #6366f1; }
+.btn-danger { background: #ef4444; }
+.btn-success { background: #22c55e; }
+.data-table {
+  width: 100%; border-collapse: collapse; border: 1px solid #e2e8f0; margin: 8px 0;
+}
+.data-table th, .data-table td {
+  padding: 8px 12px; border-bottom: 1px solid #e2e8f0;
+}
+.message { padding: 8px 12px; border-radius: 6px; margin: 8px 0; }
+.message.success { background: #f0fff4; border-left: 4px solid #22c55e; }
+.message.error { background: #fff0f0; border-left: 4px solid #ef4444; }
+.sql-block { font-family: ui-monospace,SFMono-Regular,Monaco,Consolas,'Courier New',monospace; background: #fff; border: 1px solid #e2e8f0; padding: 10px; border-radius: 4px; overflow: auto; }
+.php-output { border: 1px solid #e2e8f0; padding: 12px; background: #fbfaff; border-radius: 4px; }
+.nav-toggle { display: none; font-size: 1.2em; padding: 8px 12px; border: none; border-radius: 6px; background: #1f2937; color: #fff; }
+.badge { display: inline-block; padding: 2px 6px; font-size: 12px; border-radius: 999px; background: #6366f1; color: #fff; }
+.breadcrumb { font-size: 0.95em; color: #64748b; }
+
+/* Responsive behavior: collapse sidebar and adjust content at small viewports */
+@media (max-width: 768px) {
+  .sidebar { position: fixed; left: 0; top: 0; height: 100%; width: 240px; transform: translateX(-100%); transition: transform .3s ease; z-index: 1000; }
+  .sidebar.active { transform: translateX(0); }
+  .content { margin-left: 0; padding: 12px; }
+  .nav-toggle { display: inline-block; margin-right: 8px; }
+  table.data-table, table.compare { display: block; overflow-x: auto; }
+}
