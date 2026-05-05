@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 17: MySQL Joins — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '17';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -89,4 +89,4 @@ GROUP BY c.id, c.name;</code></pre>
     <strong>Mistake 3:</strong> Ambiguous column names — if both tables have a "name" column, you must specify which one: <code>c.name</code> or <code>p.name</code>.
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

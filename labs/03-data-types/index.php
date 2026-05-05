@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 03: Data Types';
 $baseUrl = '../../style.css';
 $currentLab = '03';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -57,4 +57,4 @@ include '../../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

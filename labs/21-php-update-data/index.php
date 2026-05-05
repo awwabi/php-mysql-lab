@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 21: PHP Update Data';
 $baseUrl = '../../style.css';
 $currentLab = '21';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -52,4 +52,4 @@ include '../../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

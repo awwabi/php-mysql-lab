@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 13: MySQL Create Table — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '13';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -79,4 +79,4 @@ ALTER TABLE products DROP COLUMN sku;</code></pre>
     <strong>Mistake 3:</strong> Using the wrong data type — leads to data truncation or wasted storage.
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

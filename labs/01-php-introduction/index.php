@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 01: PHP Introduction';
 $baseUrl = '../../style.css';
 $currentLab = '01';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -53,4 +53,4 @@ include '../../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

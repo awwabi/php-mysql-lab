@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 14: MySQL Insert — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '14';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -66,4 +66,4 @@ INSERT INTO products (id, name, price) VALUES (100, 'D', 400);
     <strong>Column count mismatch:</strong> Providing more or fewer values than columns specified.
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

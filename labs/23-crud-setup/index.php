@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 23: CRUD Setup';
 $baseUrl = '../../style.css';
 $currentLab = '23';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 
 <h1 class="maybe-title">Lab 23: CRUD Setup</h1>
@@ -100,4 +100,4 @@ $dbname = "php_mysql_lab";
     <tr><td><a href="../26-crud-final-polish/index.php">Lab 26</a></td><td>Full CRUD</td><td>Polished application with search</td></tr>
 </table>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

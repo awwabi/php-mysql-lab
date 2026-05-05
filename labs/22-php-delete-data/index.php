@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 22: PHP Delete Data';
 $baseUrl = '../../style.css';
 $currentLab = '22';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -61,4 +61,4 @@ include '../../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 09: Form Handling';
 $baseUrl = '../../style.css';
 $currentLab = '09';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -62,4 +62,4 @@ include '../../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 05: Selection';
 $baseUrl = '../../style.css';
 $currentLab = '05';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 
 <pre class="box-header" aria-label="Lab header">

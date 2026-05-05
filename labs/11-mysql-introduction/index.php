@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 11: MySQL Introduction';
 $baseUrl = '../../style.css';
 $currentLab = '11';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -76,4 +76,4 @@ include '../../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 26: CRUD Final Polish';
 $baseUrl = '../../style.css';
 $currentLab = '26';
-include '../../includes/header.php';
+include '../includes/header.php';
 include '../../config.php';
 
 $message = '';
@@ -201,5 +201,5 @@ foreach ($products as $p) $totalValue += $p['price'] * $p['stock'];
 
 <?php
 mysqli_close($conn);
-include '../../includes/footer.php';
+include '../includes/footer.php';
 ?>

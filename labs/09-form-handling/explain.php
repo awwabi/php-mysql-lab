@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 09: Form Handling — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '09';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -99,4 +99,4 @@ echo htmlspecialchars($_POST["comment"]);
     <strong>Mistake 3:</strong> Not using <code>htmlspecialchars()</code> when displaying user input — XSS vulnerability!
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

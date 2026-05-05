@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 06: Looping — Concept Guide';
 $baseUrl = '../../style.css';
 $currentLab = '06';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <a href="index.php" class="back-link">&larr; Back to Lab Exercise</a>
 
@@ -111,4 +111,4 @@ for ($row = 1; $row &lt;= 3; $row++) {
     <strong>Mistake 3:</strong> Modifying an array while iterating over it with foreach — can cause unexpected behavior.
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

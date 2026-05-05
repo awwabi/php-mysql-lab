@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 25: CRUD Update & Delete';
 $baseUrl = '../../style.css';
 $currentLab = '25';
-include '../../includes/header.php';
+include '../includes/header.php';
 include '../../config.php';
 
 $message = '';
@@ -153,5 +153,5 @@ if ($catResult) {
 
 <?php
 mysqli_close($conn);
-include '../../includes/footer.php';
+include '../includes/footer.php';
 ?>

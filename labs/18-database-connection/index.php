@@ -2,7 +2,7 @@
 $pageTitle = 'Lab 18: Database Connection';
 $baseUrl = '../../style.css';
 $currentLab = '18';
-include '../../includes/header.php';
+include '../includes/header.php';
 ?>
 <!--
 ╔══════════════════════════════════════════════════════════════╗
@@ -59,4 +59,4 @@ include '../../includes/header.php';
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
