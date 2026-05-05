@@ -1,31 +1,12 @@
--- ============================================
--- PHP & MySQL Learning Lab — Database Setup
--- ============================================
---
--- STEP 1: Create the database
---   Go to phpMyAdmin home → click "SQL" tab at top → paste ONLY the line below → click Go
---
---   CREATE DATABASE php_mysql_lab;
---
--- STEP 2: Select the database
---   Click "php_mysql_lab" in the left sidebar to select it
---
--- STEP 3: Run the rest of this file
---   Click the "SQL" tab → paste everything below this comment block → click Go
--- ============================================
-
--- Drop tables if they already exist (run multiple times safely)
 DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS categories;
 
--- Create categories table
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     description TEXT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Create products table
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -37,7 +18,6 @@ CREATE TABLE products (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Insert sample categories
 INSERT INTO categories (name, description) VALUES
 ('Electronics', 'Electronic devices and gadgets'),
 ('Clothing', 'Apparel and fashion items'),
@@ -45,7 +25,6 @@ INSERT INTO categories (name, description) VALUES
 ('Books', 'Books and publications'),
 ('Sports', 'Sports equipment and accessories');
 
--- Insert sample products
 INSERT INTO products (name, description, price, stock, category_id) VALUES
 ('Laptop ASUS VivoBook', '14" display, Intel Core i5, 8GB RAM, 512GB SSD', 8500000, 15, 1),
 ('Wireless Mouse Logitech', 'Ergonomic wireless mouse with USB receiver', 350000, 50, 1),
