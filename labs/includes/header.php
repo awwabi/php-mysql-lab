@@ -46,7 +46,7 @@ if (isset($_SERVER['PHP_SELF']) && preg_match('#(/labs/[0-9]{2}-[^/]+)/#', $_SER
         <div class="sidebar-group">
             <div class="sidebar-group-title">Phase 2: MySQL Fundamentals</div>
             <a href="../11-mysql-introduction/index.php" class="sidebar-link <?= $activeLab === '11' ? 'active' : '' ?>">11. MySQL Introduction</a>
-            <a href="../12-mysql-data-types/index.php" class="sidebar-link <?= $activeLab === '12' ? 'active' : '' ?>">12. MySQL Data Types</a>
+            <a href="../12-mysql-datatypes/index.php" class="sidebar-link <?= $activeLab === '12' ? 'active' : '' ?>">12. MySQL Data Types</a>
             <a href="../13-mysql-create-table/index.php" class="sidebar-link <?= $activeLab === '13' ? 'active' : '' ?>">13. MySQL Create Table</a>
             <a href="../14-mysql-insert/index.php" class="sidebar-link <?= $activeLab === '14' ? 'active' : '' ?>">14. MySQL Insert</a>
             <a href="../15-mysql-select/index.php" class="sidebar-link <?= $activeLab === '15' ? 'active' : '' ?>">15. MySQL Select</a>
