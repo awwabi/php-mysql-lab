@@ -1,11 +1,4 @@
 <?php
-$pageTitle = 'Lab 08: Sessions & Cookies';
-$baseUrl = '../../style.css';
-$currentLab = '08';
-include __DIR__ . '/../includes/header.php';
-?>
-
-<?php
 /*
 ╔══════════════════════════════════════════════════════════════╗
 ║  LAB 8: SESSIONS & COOKIES                                  ║
@@ -18,6 +11,10 @@ include __DIR__ . '/../includes/header.php';
 ║  - Understand the difference between sessions and cookies     ║
 ║  - Destroy sessions and delete cookies                       ║
 ║                                                              ║
+║  IMPORTANT: session_start() and setcookie() MUST be called   ║
+║  BEFORE any HTML output (before the header include).          ║
+║  That's why some TODOs are placed above the header here.     ║
+║                                                              ║
 ║  INSTRUCTIONS:                                               ║
 ║  Find all TODO comments and complete the missing code.       ║
 ║  Open this file in your browser via XAMPP (localhost).       ║
@@ -28,25 +25,35 @@ include __DIR__ . '/../includes/header.php';
 */
 
 // TODO 1: Start a session
-// HINT: session_start(); must be at the very top before any HTML output
-
-// TODO 2: Store a value in the session
-// HINT: $_SESSION["username"] = "Alice";
-
-// TODO 3: Read and display a session value
-// HINT: echo $_SESSION["username"] ?? "No session set";
+// HINT: session_start(); — must be called before ANY HTML output
 
 // TODO 4: Set a cookie that expires in 1 hour
 // HINT: setcookie("theme", "dark", time() + 3600, "/");
-
-// TODO 5: Read and display a cookie value
-// HINT: echo $_COOKIE["theme"] ?? "No cookie set";
 
 // TODO 6: Destroy a session completely
 // HINT: session_unset(); session_destroy();
 
 // TODO 7: Delete a cookie by setting expiry in the past
 // HINT: setcookie("theme", "", time() - 3600, "/");
+
+// --- Everything below this line outputs HTML ---
+// session_start() and setcookie() must be ABOVE this line!
+
+$pageTitle = 'Lab 08: Sessions & Cookies';
+$baseUrl = '../../style.css';
+$currentLab = '08';
+include __DIR__ . '/../includes/header.php';
+?>
+
+<?php
+// TODO 2: Store a value in the session
+// HINT: $_SESSION["username"] = "Alice";
+
+// TODO 3: Read and display a session value
+// HINT: echo $_SESSION["username"] ?? "No session set";
+
+// TODO 5: Read and display a cookie value
+// HINT: echo $_COOKIE["theme"] ?? "No cookie set";
 
 /*
 ╔══════════════════════════════════════════════════════════════╗
