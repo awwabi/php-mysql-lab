@@ -4,7 +4,9 @@ $baseUrl = '../../style.css';
 $currentLab = '01';
 include __DIR__ . '/../includes/header.php';
 ?>
-<!--
+
+<?php
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  LAB 1: PHP INTRODUCTION                                    ║
 ║  Topic: Getting Started with PHP                            ║
@@ -21,27 +23,27 @@ include __DIR__ . '/../includes/header.php';
 ║  Open this file in your browser via XAMPP (localhost).       ║
 ║  Read the HINT comments if you get stuck.                    ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<!-- TODO 1: Write a PHP tag that outputs "Hello, World!" using echo -->
-<!-- HINT: Use echo inside a PHP block -->
+// TODO 1: Write a PHP tag that outputs "Hello, World!" using echo
+// HINT: Use echo inside a PHP block
 
-<!-- TODO 2: Output a paragraph of text about yourself using echo -->
-<!-- HINT: echo works with strings in quotes -->
+// TODO 2: Output a paragraph of text about yourself using echo
+// HINT: echo works with strings in quotes
 
-<!-- TODO 3: Create a variable $name and echo it -->
-<!-- HINT: $name = "Your Name"; -->
+// TODO 3: Create a variable $name and echo it
+// HINT: $name = "Your Name"; echo $name;
 
-<!-- TODO 4: Use phpinfo() to display PHP configuration -->
-<!-- HINT: phpinfo(); shows all PHP settings -->
+// TODO 4: Use phpinfo() to display PHP configuration
+// HINT: phpinfo(); shows all PHP settings
 
-<!-- TODO 5: Write a single-line comment explaining what the code does -->
-<!-- HINT: Use // for single-line comments -->
+// TODO 5: Write a single-line comment explaining what the code does
+// HINT: Use // for single-line comments
 
-<!-- TODO 6: Write a multi-line comment block -->
-<!-- HINT: Use /* ... */ for multi-line comments -->
+// TODO 6: Write a multi-line comment block
+// HINT: Use /* ... */ for multi-line comments
 
-<!--
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  EXPLORATION CHALLENGES (Do these after completing           ║
 ║  all TODOs above!)                                          ║
@@ -51,6 +53,7 @@ include __DIR__ . '/../includes/header.php';
 ║  3. Can you mix HTML and PHP in the same file? Try it.      ║
 ║  4. Look at phpinfo() output — find the PHP version.        ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php';
+?>

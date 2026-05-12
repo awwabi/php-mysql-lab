@@ -4,7 +4,9 @@ $baseUrl = '../../style.css';
 $currentLab = '03';
 include __DIR__ . '/../includes/header.php';
 ?>
-<!--
+
+<?php
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  LAB 3: DATA TYPES                                          ║
 ║  Topic: Understanding Data Types in PHP                     ║
@@ -21,30 +23,30 @@ include __DIR__ . '/../includes/header.php';
 ║  Open this file in your browser via XAMPP (localhost).       ║
 ║  Read the HINT comments if you get stuck.                    ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<!-- TODO 1: Create variables of different types and echo them -->
-<!-- HINT: $text = "Hello"; $num = 42; $price = 9.99; $active = true; echo $text; -->
+// TODO 1: Create variables of different types and echo them
+// HINT: $text = "Hello"; $num = 42; $price = 9.99; $active = true; echo $text;
 
-<!-- TODO 2: Use gettype() to display the type of each variable -->
-<!-- HINT: echo gettype($text); echo gettype($num); -->
+// TODO 2: Use gettype() to display the type of each variable
+// HINT: echo gettype($text); echo gettype($num);
 
-<!-- TODO 3: Demonstrate type juggling — add a string number to an integer -->
-<!-- HINT: $result = "10" + 5; echo $result; echo gettype($result); -->
+// TODO 3: Demonstrate type juggling — add a string number to an integer
+// HINT: $result = "10" + 5; echo $result; echo gettype($result);
 
-<!-- TODO 4: Cast a string to an integer and a float to an integer -->
-<!-- HINT: $val = "42"; $intVal = (int) $val; echo $intVal; echo gettype($intVal); -->
+// TODO 4: Cast a string to an integer and a float to an integer
+// HINT: $val = "42"; $intVal = (int) $val; echo $intVal; echo gettype($intVal);
 
-<!-- TODO 5: Use is_string(), is_int(), is_float(), is_bool() to check types -->
-<!-- HINT: echo is_string($text); echo is_int($num); -->
+// TODO 5: Use is_string(), is_int(), is_float(), is_bool() to check types
+// HINT: echo is_string($text); echo is_int($num);
 
-<!-- TODO 6: Create a NULL variable and check its type -->
-<!-- HINT: $empty = null; echo gettype($empty); echo is_null($empty); -->
+// TODO 6: Create a NULL variable and check its type
+// HINT: $empty = null; echo gettype($empty); echo is_null($empty);
 
-<!-- TODO 7: Create an array and check its type -->
-<!-- HINT: $colors = ["red", "green", "blue"]; echo gettype($colors); -->
+// TODO 7: Create an array and check its type
+// HINT: $colors = ["red", "green", "blue"]; echo gettype($colors);
 
-<!--
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  EXPLORATION CHALLENGES (Do these after completing           ║
 ║  all TODOs above!)                                          ║
@@ -55,6 +57,7 @@ include __DIR__ . '/../includes/header.php';
 ║  4. What is the difference between (int) and intval()?      ║
 ║  5. What type does gettype() return for an object?          ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php';
+?>
