@@ -4,7 +4,8 @@ $baseUrl = '../../style.css';
 $currentLab = '11';
 include __DIR__ . '/../includes/header.php';
 ?>
-<!--
+<?php
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  LAB 11: MYSQL INTRODUCTION                                 ║
 ║  Topic: Getting Started with MySQL and phpMyAdmin           ║
@@ -23,7 +24,8 @@ include __DIR__ . '/../includes/header.php';
 ║  5. Click "Go" to execute                                    ║
 ║  6. Verify the result matches the expected output             ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
+?>
 
 <div class="tip-box">
     <strong>Before you start:</strong> Make sure XAMPP is running. Open your browser and go to <code>http://localhost/phpmyadmin</code>.
@@ -32,15 +34,21 @@ include __DIR__ . '/../includes/header.php';
 
 <h2>TODOs — Write SQL in phpMyAdmin</h2>
 
-<!-- TODO 1: Create a database called "student_lab" -->
+<?php
+// TODO 1: Create a database called "student_lab"
+?>
 <pre><code>CREATE DATABASE student_lab;</code></pre>
 <p class="tip-box"><strong>Expected:</strong> "Database student_lab has been created" message.</p>
 
-<!-- TODO 2: Select the database to use it -->
+<?php
+// TODO 2: Select the database to use it
+?>
 <pre><code>USE student_lab;</code></pre>
 <p class="tip-box"><strong>Expected:</strong> Database changes to student_lab (check the left sidebar).</p>
 
-<!-- TODO 3: Create a simple "students" table -->
+<?php
+// TODO 3: Create a simple "students" table
+?>
 <pre><code>CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -50,19 +58,26 @@ include __DIR__ . '/../includes/header.php';
 );</code></pre>
 <p class="tip-box"><strong>Expected:</strong> "Table students has been created" message. You should see the table in the left sidebar.</p>
 
-<!-- TODO 4: View the table structure -->
+<?php
+// TODO 4: View the table structure
+?>
 <pre><code>DESCRIBE students;</code></pre>
 <p class="tip-box"><strong>Expected:</strong> A table showing 5 columns: id, name, email, major, gpa with their types and constraints.</p>
 
-<!-- TODO 5: Drop the table (cleanup) -->
+<?php
+// TODO 5: Drop the table (cleanup)
+?>
 <pre><code>DROP TABLE students;</code></pre>
 <p class="tip-box"><strong>Expected:</strong> Table disappears from the left sidebar.</p>
 
-<!-- TODO 6: Drop the database (cleanup) -->
+<?php
+// TODO 6: Drop the database (cleanup)
+?>
 <pre><code>DROP DATABASE student_lab;</code></pre>
 <p class="tip-box"><strong>Expected:</strong> Database disappears from the left sidebar.</p>
 
-<!--
+<?php
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  EXPLORATION CHALLENGES                                       ║
 ╠══════════════════════════════════════════════════════════════╣
@@ -74,6 +89,7 @@ include __DIR__ . '/../includes/header.php';
 ║  4. What is the difference between DROP TABLE and            ║
 ║     TRUNCATE TABLE?                                          ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php';
+?>

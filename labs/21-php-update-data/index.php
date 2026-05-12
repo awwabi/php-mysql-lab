@@ -4,7 +4,9 @@ $baseUrl = '../../style.css';
 $currentLab = '21';
 include __DIR__ . '/../includes/header.php';
 ?>
-<!--
+
+<?php
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  LAB 21: PHP UPDATE DATA                                    ║
 ║  Topic: Updating Records in MySQL from PHP                   ║
@@ -20,29 +22,30 @@ include __DIR__ . '/../includes/header.php';
 ║  - setup.sql executed in phpMyAdmin                          ║
 ║  - Labs 18-19 completed                                      ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<!-- TODO 1: Include the database config file -->
-<!-- HINT: include __DIR__ . '/../../config.php'; -->
+// TODO 1: Include the database config file
+// HINT: include __DIR__ . '/../../config.php';
 
-<!-- TODO 2: If an ID is provided in the URL ($_GET["id"]), fetch the product to edit -->
-<!-- HINT: $id = (int) $_GET["id"]; $result = mysqli_query($conn, "SELECT * FROM products WHERE id = $id"); $product = mysqli_fetch_assoc($result); -->
+// TODO 2: If an ID is provided in the URL ($_GET["id"]), fetch the product to edit
+// HINT: $id = (int) $_GET["id"]; $result = mysqli_query($conn, "SELECT * FROM products WHERE id = $id"); $product = mysqli_fetch_assoc($result);
 
-<!-- TODO 3: If the form was submitted (POST), sanitize and update the product -->
-<!-- HINT: if ($_SERVER["REQUEST_METHOD"] === "POST") { $name = mysqli_real_escape_string($conn, trim($_POST["name"])); $sql = "UPDATE products SET name='$name', price=$price, stock=$stock WHERE id=$id"; mysqli_query($conn, $sql); } -->
+// TODO 3: If the form was submitted (POST), sanitize and update the product
+// HINT: if ($_SERVER["REQUEST_METHOD"] === "POST") { $name = mysqli_real_escape_string($conn, trim($_POST["name"])); $sql = "UPDATE products SET name='$name', price=$price, stock=$stock WHERE id=$id"; mysqli_query($conn, $sql); }
 
-<!-- TODO 4: Create an edit form pre-filled with the product's current data -->
-<!-- HINT: <form method="POST"> <input name="name" value="<?php echo htmlspecialchars($product['name']); ?>"> <input name="price" value="<?php echo $product['price']; ?>"> ... <button type="submit">Update</button> </form> -->
+// TODO 4: Create an edit form pre-filled with the product's current data
+// HINT: <form method="POST"> <input name="name" value="<?php echo htmlspecialchars($product['name']); ?>"> <input name="price" value="<?php echo $product['price']; ?>"> ... <button type="submit">Update</button> </form>
 
-<!-- TODO 5: After successful update, check affected rows and display a message -->
-<!-- HINT: if (mysqli_affected_rows($conn) > 0) { echo "Product updated!"; } else { echo "No changes made."; } -->
+// TODO 5: After successful update, check affected rows and display a message
+// HINT: if (mysqli_affected_rows($conn) > 0) { echo "Product updated!"; } else { echo "No changes made."; }
 
-<!-- TODO 6: Add a "Back to list" link -->
-<!-- HINT: echo '<a href="../20-php-select-data/index.php">Back to Product List</a>'; -->
+// TODO 6: Add a "Back to list" link
+// HINT: echo '<a href="../20-php-select-data/index.php">Back to Product List</a>';
 
-<!--
+/*
 ╔══════════════════════════════════════════════════════════════╗
-║  EXPLORATION CHALLENGES                                       ║
+║  EXPLORATION CHALLENGES (Do these after completing           ║
+║  all TODOs above!)                                          ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  1. Use the PRG pattern (Post-Redirect-Get) to prevent      ║
 ║     form resubmission on refresh.                            ║
@@ -50,6 +53,7 @@ include __DIR__ . '/../includes/header.php';
 ║  3. Add validation to check that price is a positive number. ║
 ║  4. Display "Product not found" if the ID doesn't exist.     ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php';
+?>

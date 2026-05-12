@@ -4,7 +4,9 @@ $baseUrl = '../../style.css';
 $currentLab = '09';
 include __DIR__ . '/../includes/header.php';
 ?>
-<!--
+
+<?php
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  LAB 9: FORM HANDLING                                        ║
 ║  Topic: Processing HTML Forms with PHP                       ║
@@ -21,30 +23,30 @@ include __DIR__ . '/../includes/header.php';
 ║  Open this file in your browser via XAMPP (localhost).       ║
 ║  Read the HINT comments if you get stuck.                    ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<!-- TODO 1: Create an HTML form with method="GET" and a text input -->
-<!-- HINT: <form method="GET" action=""> <input type="text" name="search"> <button type="submit">Search</button> </form> -->
+// TODO 1: Create an HTML form with method="GET" and a text input
+// HINT: <form method="GET" action=""> <input type="text" name="search"> <button type="submit">Search</button> </form>
 
-<!-- TODO 2: After the form, display the submitted GET value -->
-<!-- HINT: if (isset($_GET["search"])) { echo "You searched for: " . htmlspecialchars($_GET["search"]); } -->
+// TODO 2: After the form, display the submitted GET value
+// HINT: if (isset($_GET["search"])) { echo "You searched for: " . htmlspecialchars($_GET["search"]); }
 
-<!-- TODO 3: Create an HTML form with method="POST" and multiple fields -->
-<!-- HINT: <form method="POST" action=""> <input type="text" name="name"> <input type="email" name="email"> <button type="submit">Submit</button> </form> -->
+// TODO 3: Create an HTML form with method="POST" and multiple fields
+// HINT: <form method="POST" action=""> <input type="text" name="name"> <input type="email" name="email"> <button type="submit">Submit</button> </form>
 
-<!-- TODO 4: After the form, display the submitted POST values -->
-<!-- HINT: if ($_SERVER["REQUEST_METHOD"] === "POST") { echo "Name: " . htmlspecialchars($_POST["name"]); } -->
+// TODO 4: After the form, display the submitted POST values
+// HINT: if ($_SERVER["REQUEST_METHOD"] === "POST") { echo "Name: " . htmlspecialchars($_POST["name"]); }
 
-<!-- TODO 5: Create a form with a dropdown (select) and handle the selection -->
-<!-- HINT: <select name="color"><option value="red">Red</option><option value="blue">Blue</option></select> -->
+// TODO 5: Create a form with a dropdown (select) and handle the selection
+// HINT: <select name="color"><option value="red">Red</option><option value="blue">Blue</option></select>
 
-<!-- TODO 6: Create a form with a checkbox and check if it was checked -->
-<!-- HINT: <input type="checkbox" name="agree" value="yes"> Then check: isset($_POST["agree"]) -->
+// TODO 6: Create a form with a checkbox and check if it was checked
+// HINT: <input type="checkbox" name="agree" value="yes"> Then check: isset($_POST["agree"])
 
-<!-- TODO 7: Show the difference between GET (query string) and POST (hidden) -->
-<!-- HINT: Submit the same form with GET, look at the URL. Then change to POST and submit again. -->
+// TODO 7: Show the difference between GET (query string) and POST (hidden)
+// HINT: Submit the same form with GET, look at the URL. Then change to POST and submit again.
 
-<!--
+/*
 ╔══════════════════════════════════════════════════════════════╗
 ║  EXPLORATION CHALLENGES (Do these after completing           ║
 ║  all TODOs above!)                                          ║
@@ -60,6 +62,7 @@ include __DIR__ . '/../includes/header.php';
 ║  5. What happens if you don't use htmlspecialchars()        ║
 ║     and someone enters HTML tags in the form?                ║
 ╚══════════════════════════════════════════════════════════════╝
--->
+*/
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+include __DIR__ . '/../includes/footer.php';
+?>
