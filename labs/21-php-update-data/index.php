@@ -34,7 +34,7 @@ include __DIR__ . '/../includes/header.php';
 // HINT: if ($_SERVER["REQUEST_METHOD"] === "POST") { $name = mysqli_real_escape_string($conn, trim($_POST["name"])); $sql = "UPDATE products SET name='$name', price=$price, stock=$stock WHERE id=$id"; mysqli_query($conn, $sql); }
 
 // TODO 4: Create an edit form pre-filled with the product's current data
-// HINT: <form method="POST"> <input name="name" value="<?php echo htmlspecialchars($product['name']); ?>"> <input name="price" value="<?php echo $product['price']; ?>"> ... <button type="submit">Update</button> </form>
+/* HINT: <form method="POST"> <input name="name" value="<?php echo htmlspecialchars($product['name']); ?>"> <input name="price" value="<?php echo $product['price']; ?>"> ... <button type="submit">Update</button> </form>
 
 // TODO 5: After successful update, check affected rows and display a message
 // HINT: if (mysqli_affected_rows($conn) > 0) { echo "Product updated!"; } else { echo "No changes made."; }
