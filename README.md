@@ -18,7 +18,7 @@ This document provides an organized instructor guide for Binus University’s PH
 ## 3. Setup Instructions (step-by-step)
 1. Install XAMPP from apachefriends.org
 2. Start Apache and MySQL from XAMPP Control Panel
-3. Copy the php-mysql-lab/ folder to XAMPP'shtdocs/ directory
+3. Copy the php-mysql-lab/ folder to XAMPP's htdocs/ directory
 4. Open phpMyAdmin: http://localhost/phpmyadmin
 5. Go to SQL tab, paste contents of setup.sql, click Go
 6. Open browser: http://localhost/php-mysql-lab/
