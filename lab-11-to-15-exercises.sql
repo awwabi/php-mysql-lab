@@ -1,10 +1,18 @@
 -- ============================================
--- LAB 11: MySQL Introduction
+-- STEP 1: Run at phpMyAdmin HOME page (no database selected)
 -- ============================================
 
 CREATE DATABASE student_lab;
 
-USE student_lab;
+CREATE DATABASE IF NOT EXISTS datatype_lab;
+
+CREATE DATABASE IF NOT EXISTS table_lab;
+
+
+-- ============================================
+-- DATABASE: student_lab (Lab 11)
+-- Select "student_lab" from the left sidebar first
+-- ============================================
 
 CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -18,16 +26,11 @@ DESCRIBE students;
 
 DROP TABLE students;
 
-DROP DATABASE student_lab;
-
 
 -- ============================================
--- LAB 12: MySQL Data Types
+-- DATABASE: datatype_lab (Lab 12)
+-- Select "datatype_lab" from the left sidebar first
 -- ============================================
-
-CREATE DATABASE IF NOT EXISTS datatype_lab;
-
-USE datatype_lab;
 
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -72,12 +75,9 @@ INSERT INTO users (username, role, permissions) VALUES
 
 
 -- ============================================
--- LAB 13: MySQL Create Table
+-- DATABASE: table_lab (Lab 13)
+-- Select "table_lab" from the left sidebar first
 -- ============================================
-
-CREATE DATABASE IF NOT EXISTS table_lab;
-
-USE table_lab;
 
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -115,7 +115,9 @@ ALTER TABLE products ADD COLUMN sku VARCHAR(50) AFTER name;
 
 
 -- ============================================
--- LAB 14: MySQL Insert
+-- DATABASE: php_mysql_lab (Lab 14 & 15)
+-- Select "php_mysql_lab" from the left sidebar first
+-- Make sure you have run setup.sql to create this database
 -- ============================================
 
 INSERT INTO products (name, price, stock, category_id)
@@ -136,11 +138,6 @@ SELECT * FROM products ORDER BY id DESC LIMIT 10;
 
 INSERT INTO categories (name, description) VALUES ('Electronics', 'Duplicate!');
 
-
--- ============================================
--- LAB 15: MySQL Select
--- ============================================
-
 SELECT * FROM products;
 
 SELECT name, price, stock FROM products;
@@ -157,3 +154,10 @@ SELECT name, price FROM products ORDER BY price DESC LIMIT 5;
 SELECT name FROM products WHERE name LIKE '%phone%';
 
 SELECT DISTINCT category_id FROM products;
+
+
+-- ============================================
+-- STEP 3: Run at phpMyAdmin HOME page (cleanup)
+-- ============================================
+
+DROP DATABASE student_lab;
